@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <script defer type="text/javascript" src="singleplayer.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <img id="logo" src="logo.png">
+    <div id="container">
+    <div id="paragraph">Your turn! <br><br><img src="x.png" height="50px" alt="X"></div>
+    <br>
+    <div class="space"></div>
+
+    <div class="space"></div>
+        <div class="box" id="b1" onClick="play(id)"></div>
+        <div class="box" id="b2" onClick="play(id)"></div>
+        <div class="box" id="b3" onClick="play(id)"></div>
+   <div class="space"></div>
+   <div class="box" id="b4" onClick="play(id)"></div>
+   <div class="box" id="b5" onClick="play(id)"></div>
+   <div class="box" id="b6" onClick="play(id)"></div>
+<div class="space"></div>
+<div class="box" id="b7" onClick="play(id)"></div>
+<div class="box" id="b8" onClick="play(id)"></div>
+<div class="box" id="b9" onClick="play(id)"></div>
+<div class="space"></div>
+
+    </div>
+    <button id="button" onClick="openGame()">Press here to play again!</button>
+</body>
+</html>

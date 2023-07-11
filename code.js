@@ -1,3 +1,7 @@
+//////////////////
+//SWITCHING PAGES
+/////////////////
+
 /////////////////////////////////
 //DECLARATIONS
 /////////////////////////////////////
@@ -11,34 +15,6 @@ let displaytext= document.getElementById("paragraph");
 let buttonEl= document.getElementById("button");
 let state="playing";
 console.log(window.location.pathname);
-///////////////////////
-//ANIMATION
-////////////////////////
-   // This allows a transition before switching pages 
-   if (window.location.pathname=="/index.html"){
-   const landing=document.getElementById("button2");
-       landing.addEventListener('click', e=> {
-           e.preventDefault();
-           var box=document.getElementById("home");
-           var keyframes=[
-               { transform:'translate(0,0)' },
-
-               {transform:'translate(0,-100px)'},
-
-
-           ];
-           var options={
-               duration:500,
-               fill:'backwards'
-           };
-           var animation1=box.animate(keyframes,options);
-           animation1.play();
-          setTimeout(() => {
-           window.location.href="./game.html"
-          },500);
-       });
-    }
-
 ///////////////////////////////////
 //FUNCTIONS
 //////////////////////////////////

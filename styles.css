@@ -72,26 +72,24 @@ animation-iteration-count: 1;
 #button2{
     font-size:40px;
     border-radius:20px;
-    width:200px;
+    width:250px;
     height:60px;
     background-color:aquamarine;
     opacity:1;
-
+margin-right:60px;
     animation:bounceInUp backwards;
     animation-delay:0.5s;
     animation-duration:0.5s;
     animation-iteration-count: 1;
  
 }
+.sideBySideForm{
+    display:inline-block;
+}
 .space{
     flex-basis:100%;
     height:0;
 }
-.animateOnce {
-    -webkit-animation: bounceInUp 0.5s normal forwards; 
-    -moz-animation:    NAME-OF-YOUR-ANIMATION 0.5s normal forwards;
-    -o-animation:      NAME-OF-YOUR-ANIMATION 0.5s normal forwards;
-  }
 .box{
     height:100px;
     width:100px;
