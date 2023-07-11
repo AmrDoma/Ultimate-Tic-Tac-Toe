@@ -8,9 +8,15 @@ html,body{
 }
 #logo{
    height:20%;
-position:absolute;
-top:40px;
-left:37%;
+   position:relative;
+   top:-50px;
+}
+#home{
+    position:relative;
+    top:-150px;
+    animation:fadeInTopLeft;
+    animation-duration:0.5s;
+    
 }
 #container{
 display:flex;
@@ -21,7 +27,7 @@ justify-content:center;
 height:auto;
 width:40%;
 position:relative;
-top:80px;
+
 gap:0px;
 border-radius: 5px;
 }
@@ -35,7 +41,7 @@ border-radius: 5px;
 #button{
   position:relative;
   z-index:1;
-  top:17%;
+top:5%;
   opacity:10;
   height:3rem;
   background-color:rgb(207, 207, 26);
@@ -43,18 +49,49 @@ border-radius: 10px;
 display: none;
 font-weight:bold;
 font-size:20px;
+animation:fadeInUp;
+animation-play-state: running;
+animation-duration:0.5s;
+animation-iteration-count: 1;
 }
-#button,#button2:hover{
+#button:hover{
     cursor:pointer;
     border:2px solid black;
     transform:translate(-5px,-5px);
     background-color:rgb(29, 203, 234);
     transition:all 0.2s;
 }
+#button2:hover{
+    cursor:pointer;
+    border:2px solid black;
+    color:white;
+    transform:translate(-5px,-5px);
+    transition:all 0.2s;
+    background-color:rgb(11, 116, 143)
+}
+#button2{
+    font-size:40px;
+    border-radius:20px;
+    width:200px;
+    height:60px;
+    background-color:aquamarine;
+    opacity:1;
+
+    animation:bounceInUp backwards;
+    animation-delay:0.5s;
+    animation-duration:0.5s;
+    animation-iteration-count: 1;
+ 
+}
 .space{
     flex-basis:100%;
     height:0;
 }
+.animateOnce {
+    -webkit-animation: bounceInUp 0.5s normal forwards; 
+    -moz-animation:    NAME-OF-YOUR-ANIMATION 0.5s normal forwards;
+    -o-animation:      NAME-OF-YOUR-ANIMATION 0.5s normal forwards;
+  }
 .box{
     height:100px;
     width:100px;
@@ -63,24 +100,10 @@ font-size:20px;
     background-color:#197991;
     color:rgb(189, 189, 32);
     text-align:center;
-    
-
 }
 .box:hover{
     background-color:#144a57;
     cursor:pointer;
-}
-#home{
-    position:relative;
-    top:-150px;
-    
-}
-#button2{
-    font-size:40px;
-    border-radius:20px;
-    width:200px;
-    height:60px;
-    background-color:aquamarine
 }
 @media (max-width:840px){
     #home{
@@ -99,8 +122,6 @@ font-size:20px;
     #container{
         width:65%;
     }
-    #logo{
-        left:12%;
-    }
+  
 
 }
