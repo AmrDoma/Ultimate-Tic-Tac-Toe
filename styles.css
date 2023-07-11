@@ -1,0 +1,84 @@
+html,body{
+    height:100%;
+    background-color:#60408B;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+#logo{
+   height:20%;
+position:absolute;
+top:40px;
+left:37%;
+}
+#container{
+display:flex;
+align-self:center;
+flex-wrap:wrap;
+align-items:center;
+justify-content:center;
+height:auto;
+width:40%;
+position:relative;
+top:80px;
+gap:0px;
+border-radius: 5px;
+}
+#paragraph{
+    position:relative;
+    text-align:center;
+    top:-35px;
+    color:white;
+    font-size:25px;
+}
+#button{
+  position:relative;
+  z-index:1;
+  top:17%;
+  opacity:10;
+  height:3rem;
+  background-color:rgb(207, 207, 26);
+border-radius: 10px;
+display: none;
+font-weight:bold;
+font-size:20px;
+}
+#button,#button2:hover{
+    cursor:pointer;
+    border:2px solid black;
+    transform:translate(-5px,-5px);
+    background-color:rgb(29, 203, 234);
+    transition:all 0.2s;
+}
+.space{
+    flex-basis:100%;
+    height:0;
+}
+.box{
+    height:100px;
+    width:100px;
+    border: solid #00FC85 5px;
+    flex-grow:1;
+    background-color:#197991;
+    color:rgb(189, 189, 32);
+    text-align:center;
+    
+
+}
+.box:hover{
+    background-color:#144a57;
+    cursor:pointer;
+}
+#home{
+    position:relative;
+    top:-150px;
+    
+}
+#button2{
+    font-size:40px;
+    border-radius:20px;
+    width:200px;
+    height:60px;
+    background-color:aquamarine
+}
