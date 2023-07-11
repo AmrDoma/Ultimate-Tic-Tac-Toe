@@ -82,3 +82,25 @@ font-size:20px;
     height:60px;
     background-color:aquamarine
 }
+@media (max-width:840px){
+    #home{
+       height:25%;
+    }
+    #button2{
+        font-size:30px;
+        height:45px;
+        width:150px;
+    }
+    .box{
+        width:75px;
+        height:75px;
+        
+    }
+    #container{
+        width:65%;
+    }
+    #logo{
+        left:12%;
+    }
+
+}

@@ -13,7 +13,7 @@ let state="playing";
 ///////////////////////////////////
 //FUNCTIONS
 //////////////////////////////////
-
+console.log(window.URL)
 buttonEl.addEventListener("click",function(){
     window.location.reload();
 })
